@@ -9,6 +9,6 @@ data class ParagraphStyle(
     val fontFamily: String,
     val fontSize: Double,
     val lineHeight: Double,
-    val ellipses: String
-    // TODO add Locale class and property here
+    val ellipses: String,
+    val locale: Locale
 )

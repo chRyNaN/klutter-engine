@@ -56,7 +56,7 @@ interface Window {
 
     fun render(scene: Scene)
 
-    // TODO fun updateSemantics(update: SemanticsUpdate)
+    fun updateSemantics(update: SemanticsUpdate)
 
     fun setIsolateDebugName(name: String)
 

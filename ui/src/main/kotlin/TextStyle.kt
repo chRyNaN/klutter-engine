@@ -15,8 +15,8 @@ data class TextStyle(
     val wordSpacing: Double,
     val height: Double,
     val locale: Locale,
-    // TODO add Paint class for background val background: Paint,
-    // TODO add Paint class for foreground val foreground: Paint
+    val background: Paint,
+    val foreground: Paint,
     val shadows: List<Shadow> = emptyList()
 ) {
 

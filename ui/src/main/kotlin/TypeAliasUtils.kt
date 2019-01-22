@@ -10,7 +10,7 @@ typealias FrameCallback = (duration: Long) -> Unit
 
 typealias PointerDataPacketCallback = (packet: PointerDataPacket) -> Unit
 
-typealias SemanticsActionCallback = (id: Int) -> Unit // TODO, action: SemanticsAction, args: ByteData) -> Unit
+typealias SemanticsActionCallback = (id: Int, action: SemanticsAction, args: ByteData) -> Unit
 
 typealias PlatformMessageResponseCallback = (data: ByteData) -> Unit
 
