@@ -1,12 +1,14 @@
 package com.chrynan.klutter.ui
 
+import kotlinx.coroutines.Deferred
+
 expect class Codec {
 
     val frameCount: Int
 
     val repetitionCount: Int
 
-    fun getNextFrame(): FrameInfo // TODO this should probably be an asynchronous function returning a Deferred object
+    suspend fun getNextFrame(): Deferred<FrameInfo>
 
     fun dispose()
 }

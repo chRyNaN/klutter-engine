@@ -16,7 +16,7 @@ expect class Paint() {
 
     var maskFilter: MaskFilter
 
-    // TODO val shader: Shader
+    val shader: Shader
 
     var strokeCap: StrokeCap
 

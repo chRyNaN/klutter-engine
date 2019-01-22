@@ -1,8 +1,10 @@
 package com.chrynan.klutter.ui
 
+import kotlinx.coroutines.Deferred
+
 expect class Scene {
 
-    fun toImage(width: Int, height: Int): Image // TODO this should be updated to be asynchronous and return a Deferred
+    suspend fun toImage(width: Int, height: Int): Deferred<Image>
 
     fun dispose()
 }
