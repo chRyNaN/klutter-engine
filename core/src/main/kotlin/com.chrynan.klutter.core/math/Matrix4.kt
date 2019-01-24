@@ -1,4 +1,4 @@
-package com.chrynan.klutter.ui.math
+package com.chrynan.klutter.core.math
 
 class Matrix4(
     arg0: Double,

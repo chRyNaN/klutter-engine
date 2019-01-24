@@ -1,4 +1,4 @@
-package com.chrynan.klutter.ui.math
+package com.chrynan.klutter.core.math
 
 class Matrix2(
     initialRowOneColumnOne: Float = 0.0f,

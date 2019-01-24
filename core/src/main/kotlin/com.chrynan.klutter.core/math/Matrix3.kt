@@ -1,4 +1,4 @@
-package com.chrynan.klutter.ui.math
+package com.chrynan.klutter.core.math
 
 class Matrix3(
     initialArg0: Float = 0.0f,

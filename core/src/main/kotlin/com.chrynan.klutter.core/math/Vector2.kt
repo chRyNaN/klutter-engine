@@ -1,22 +1,20 @@
-package com.chrynan.klutter.ui.math
+package com.chrynan.klutter.core.math
 
-class Vector3(
+class Vector2(
     initialX: Float = 0.0f,
-    initialY: Float = 0.0f,
-    initialZ: Float = 0.0f
+    initialY: Float = 0.0f
 ) : Vector<Float> {
 
     companion object {
 
         private const val INDEX_X = 0
         private const val INDEX_Y = 1
-        private const val INDEX_Z = 2
     }
 
     override val storage: Float32List
         get() = internalStorage
 
-    private val internalStorage = mutableListOf(initialX, initialY, initialZ)
+    private val internalStorage = mutableListOf(initialX, initialY)
 
     var x: Float
         get() = internalStorage[INDEX_X]
@@ -30,20 +28,13 @@ class Vector3(
             internalStorage[INDEX_Y] = value
         }
 
-    var z: Float
-        get() = internalStorage[INDEX_Z]
-        set(value) {
-            internalStorage[INDEX_Z] = value
-        }
-
-    fun copy(x: Float = this.x, y: Float = this.y, z: Float = this.z) =
-        Vector3(initialX = x, initialY = y, initialZ = z)
+    fun copy(x: Float = this.x, y: Float = this.y) = Vector2(initialX = x, initialY = y)
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (other == null || this::class != other::class) return false
 
-        other as Vector3
+        other as Vector2
 
         if (internalStorage != other.internalStorage) return false
 
@@ -52,5 +43,5 @@ class Vector3(
 
     override fun hashCode() = internalStorage.hashCode()
 
-    override fun toString() = "[$x,$y, $z]"
+    override fun toString() = "[$x,$y]"
 }

@@ -1,4 +1,4 @@
-package com.chrynan.klutter.ui.math
+package com.chrynan.klutter.core.math
 
 typealias Float64 = Double
 

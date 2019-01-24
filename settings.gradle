@@ -1,2 +1,3 @@
 rootProject.name = 'klutter-engine'
 include ':ui'
+include ':core'
